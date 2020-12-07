@@ -2,7 +2,7 @@ class OrderController < ApplicationController
   def menu
   end
   
-  def admin
+  def adminorders
   end
 
   def inventorypanel
