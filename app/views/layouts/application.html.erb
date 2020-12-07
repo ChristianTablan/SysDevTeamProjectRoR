@@ -1,5 +1,3 @@
-<p class="notice"><%= notice %></p>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,7 +18,13 @@
   <body>
 
     <%= render 'order/navbar'%>
+
     <div class="container">
+
+      <% if notice %>
+        <%= render 'order/alert'%>
+      <% end %>
+      
       <%= yield %>
     </div>
     
