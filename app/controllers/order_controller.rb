@@ -4,4 +4,7 @@ class OrderController < ApplicationController
   
   def admin
   end
+
+  def inventorypanel
+  end
 end

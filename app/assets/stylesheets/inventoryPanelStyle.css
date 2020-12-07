@@ -1,0 +1,27 @@
+.addMeal{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 25%;
+    border: 0.5px solid black;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+.addMeal input{
+    float: right;
+}
+
+.addMeal div{
+    margin-bottom: 3%;
+}
+
+#buttonSubmit{
+    display: flex;
+    margin: auto;
+}
+#buttonSubmit button{
+    /* margin: auto; */
+    justify-content: end;
+}
