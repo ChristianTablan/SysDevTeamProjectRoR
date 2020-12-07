@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :administrators
   resources :inventories
   root 'order#menu'
 
