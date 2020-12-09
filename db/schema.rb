@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_07_220639) do
+ActiveRecord::Schema.define(version: 2020_12_09_150802) do
 
   create_table "administrators", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -24,12 +24,31 @@ ActiveRecord::Schema.define(version: 2020_12_07_220639) do
     t.index ["reset_password_token"], name: "index_administrators_on_reset_password_token", unique: true
   end
 
+  create_table "customerorders", force: :cascade do |t|
+    t.decimal "subtotal"
+    t.decimal "qctax"
+    t.decimal "canadatax"
+    t.decimal "total"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "inventories", force: :cascade do |t|
     t.string "title"
     t.string "description"
     t.decimal "price"
     t.integer "quantity"
     t.boolean "availability"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "orderitems", force: :cascade do |t|
+    t.integer "quantity"
+    t.integer "product_id"
+    t.integer "order_id"
+    t.decimal "unit_price"
+    t.decimal "total"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

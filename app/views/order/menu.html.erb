@@ -1,2 +1,117 @@
-<h1>Order</h1>
-<p>Find me in app/views/order/menu.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheets/indexStyle.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="scripts/indexScript.js"></script>
+    <% javascript_pack_tag 'application' %>
+
+    <title>Pho Ong Rau | Pick Up System</title>
+</head>
+<body>
+
+    <div class="menu-sections-nav">
+        <ul class="nav-links">
+            <li>
+                <a href="#">Entrées</a>
+            </li>
+            <li>
+                <a href="#">Spécialtés Pho Ong Rau</a>
+            </li>
+            <li>
+                <a href="#">Vermicelles</a>
+            </li>
+            <li>
+                <a href="#">Riz à la Vapeur</a>
+            </li>
+            <li>
+                <a href="#">Pho</a>
+            </li>
+            <li>
+                <a href="#">Sautés</a>
+            </li>
+            <li>
+                <a href="#">Table d'Hôte</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <span> </span>
+    </div>
+
+    <div class="cart">
+        <!-- <div></div> -->
+        <button id="cartButton">Cart <span id="cartOrderCount"> (0)</span></button>
+    </div>
+
+    <div class="menu">
+        <div class="menu-card">
+            <div id="mealImage">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/4c/13/cd/porc-boeuf-poulet-et.jpg" alt="">
+            </div>
+    
+            <div id="Description">
+                <p>Item #1</p>
+                <p>Delicious Meal</p>
+                <p id="mealPrice">9.99$</p>
+            </div>
+    
+            <div id="addToCardSection">
+                <input type="number">
+                <br>
+                <button> Add to cart</button>
+            </div>
+        </div>
+        <div class="menu-card">
+            <div id="mealImage">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/4c/13/cd/porc-boeuf-poulet-et.jpg" alt="">
+            </div>
+    
+            <div id="Description">
+                <p>Item #1</p>
+                <p>Delicious Meal</p>
+                <p id="mealPrice">9.99$</p>
+            </div>
+    
+            <div id="addToCardSection">
+                <input type="number">
+                <br>
+                <button> Add to cart</button>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <div id="mealImage">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/4c/13/cd/porc-boeuf-poulet-et.jpg" alt="">
+            </div>
+    
+            <div id="Description">
+                <p style="color: red; font-weight: bold;">Out of Stock</p>
+                <p>Item #1</p>
+                <p>Delicious Meal</p>
+                <p id="mealPrice">9.99$</p>
+            </div>
+    
+            <div id="addToCardSection">
+                <input type="number">
+                <br>
+                <button> Add to cart</button>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>
